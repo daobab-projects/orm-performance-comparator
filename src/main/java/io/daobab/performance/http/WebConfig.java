@@ -9,7 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @RequiredArgsConstructor
 public class WebConfig implements WebMvcConfigurer {
 
-    private final RequestInterceptor interceptor;
+    private final InternalInterceptor interceptor;
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

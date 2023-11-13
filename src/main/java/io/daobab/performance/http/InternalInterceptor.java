@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Slf4j
 @Component
-public class RequestInterceptor implements HandlerInterceptor {
+public class InternalInterceptor implements HandlerInterceptor {
 
     private final String execTime = "EXECUTION TIME";
     private final String startTime = "START TIME";
@@ -30,17 +30,17 @@ public class RequestInterceptor implements HandlerInterceptor {
         if (startTimeStr != null) {
             long startTime = Long.parseLong(startTimeStr);
             long microseconds = ((System.nanoTime() - startTime) / 1000);
-            log.info("URI: " + reqUri + ", " + execTime + " = " + microseconds + " microseconds ");
+            log.info(getClass().getSimpleName() + " URI: " + reqUri + ", " + execTime + " = " + microseconds + " microseconds ");
             response.setHeader(execTime, "" + microseconds);
         } else {
-            log.info("URI: " + reqUri + ", " + execTime + " = ?");
+            log.info(getClass().getSimpleName() + " URI: " + reqUri + ", " + execTime + " = ?");
         }
     }
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object object, Exception exception) {
         if (exception != null) {
-            log.info("An error occured.");
+            log.info(getClass().getSimpleName() + " An error occured.");
         }
     }
 }

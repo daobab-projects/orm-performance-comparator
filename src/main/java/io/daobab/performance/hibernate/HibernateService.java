@@ -1,4 +1,4 @@
-package io.daobab.performance.hibernate.service;
+package io.daobab.performance.hibernate;
 
 import io.daobab.performance.hibernate.dao.ActorDao;
 import io.daobab.performance.hibernate.dao.CustomerDao;

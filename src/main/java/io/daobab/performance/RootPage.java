@@ -34,14 +34,14 @@ public class RootPage {
                     <th>JPA</th>
                   </tr>
                   <tr>
-                    <td><a href=daobab/getActors>GetActors</a></td>
-                    <td><a href=hibernate/getActors>GetActors</a></td>
-                    <td><a href=jpa/getActors>GetActors</a></td>
+                    <td><a href=daobab/getActors>getActors</a></td>
+                    <td><a href=hibernate/getActors>getActors</a></td>
+                    <td><a href=jpa/getActors>getActors</a></td>
                   </tr>
                   <tr>
-                    <td><a href=daobab/getActorById/1>GetActorById</a></td>
-                    <td><a href=hibernate/getActorById/1>GetActorById</a></td>
-                    <td><a href=jpa/getActorById/1>GetActorById</a></td>
+                    <td><a href=daobab/getActorById/1>getActorById</a></td>
+                    <td><a href=hibernate/getActorById/1>getActorById</a></td>
+                    <td><a href=jpa/getActorById/1>getActorById</a></td>
                   </tr>
                   <tr>
                     <td><a href=daobab/getCustomerPaymentSum/1>getCustomerPaymentSum</a></td>
@@ -66,24 +66,24 @@ public class RootPage {
                     <th>1000x</th>
                   </tr>
                   <tr>
-                    <td><a href=invoker/testGetActors/10>Test GetActors x10</a></td>
-                    <td><a href=invoker/testGetActors/100>Test GetActors x100</a></td>
-                    <td><a href=invoker/testGetActors/1000>Test GetActors x1000</a></td>
+                    <td><a href=invoker/testGetActors/10>Test getActors x10</a></td>
+                    <td><a href=invoker/testGetActors/100>Test getActors x100</a></td>
+                    <td><a href=invoker/testGetActors/1000>Test getActors x1000</a></td>
                   </tr>
                   <tr>
-                    <td><a href=invoker/testGetActorById/1/10>Test GetActorById x10</a></td>
-                    <td><a href=invoker/testGetActorById/1/100>Test GetActorById x100</a></td>
-                    <td><a href=invoker/testGetActorById/1/1000>Test GetActorById x1000</a></td>
+                    <td><a href=invoker/testGetActorById/1/10>Test getActorById x10</a></td>
+                    <td><a href=invoker/testGetActorById/1/100>Test getActorById x100</a></td>
+                    <td><a href=invoker/testGetActorById/1/1000>Test getActorById x1000</a></td>
                   </tr>
                   <tr>
-                    <td><a href=invoker/testGetCustomerPaymentSum/10>Test GetCustomerPaymentSum x10</a></td>
-                    <td><a href=invoker/testGetCustomerPaymentSum/100>Test GetCustomerPaymentSum x100</a></td>
-                    <td><a href=invoker/testGetCustomerPaymentSum/1000>Test GetCustomerPaymentSum x1000</a></td>
+                    <td><a href=invoker/testGetCustomerPaymentSum/10>Test getCustomerPaymentSum x10</a></td>
+                    <td><a href=invoker/testGetCustomerPaymentSum/100>Test getCustomerPaymentSum x100</a></td>
+                    <td><a href=invoker/testGetCustomerPaymentSum/1000>Test getCustomerPaymentSum x1000</a></td>
                   </tr>
                   <tr>
-                    <td><a href=invoker/testGetCustomerAddresses/10>Test GetCustomerAddresses x10</a></td>
-                    <td><a href=invoker/testGetCustomerAddresses/100>Test GetCustomerAddresses x100</a></td>
-                    <td><a href=invoker/testGetCustomerAddresses/1000>Test GetCustomerAddresses x1000</a></td>
+                    <td><a href=invoker/testGetCustomerAddresses/10>Test getCustomerAddresses x10</a></td>
+                    <td><a href=invoker/testGetCustomerAddresses/100>Test getCustomerAddresses x100</a></td>
+                    <td><a href=invoker/testGetCustomerAddresses/1000>Test getCustomerAddresses x1000</a></td>
                   </tr>
 
                 </table>

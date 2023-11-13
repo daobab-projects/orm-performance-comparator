@@ -2,7 +2,6 @@ package io.daobab.performance.hibernate;
 
 import io.daobab.performance.hibernate.entity.Actor;
 import io.daobab.performance.hibernate.model.CustomerAddress;
-import io.daobab.performance.hibernate.service.HibernateService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;

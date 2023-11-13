@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/jpa")
+@RequestMapping(path = "/jpa", produces = MediaType.APPLICATION_JSON_VALUE)
 @RequiredArgsConstructor
 public class JpaController {
 
@@ -23,26 +23,24 @@ public class JpaController {
     private final PaymentJpaService paymentJpaService;
     private final CustomerJpaService customerJpaService;
 
-    @GetMapping(value = "/getActorById/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/getActorById/{id}")
     Actor getActor(@PathVariable("id") Integer id) {
-        return actorService.findById(id).get();
+        return actorService.getReferenceById(id);
     }
 
-    @GetMapping(value = "/getActors", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/getActors")
     List<Actor> getActors() {
         return actorService.findAll();
     }
 
-    @GetMapping(value = "/getCustomerPaymentSum/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/getCustomerPaymentSum/{id}")
     Double getPaymentSum(@PathVariable("id") Integer id) {
         return paymentJpaService.getCustomerPaymentSum(id);
     }
 
-
     @GetMapping(value = "/getCustomerAddresses")
     List<CustomerAddress> getCustomerAddresses() {
-        return customerJpaService.getCustomerAdresses();
+        return customerJpaService.getCustomerAddresses();
     }
-
 
 }

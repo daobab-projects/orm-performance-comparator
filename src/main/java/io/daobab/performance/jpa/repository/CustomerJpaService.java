@@ -12,6 +12,6 @@ import java.util.List;
 public interface CustomerJpaService extends JpaRepository<Payment, Integer> {
 
     @Query("select c.firstName as firstName, c.lastName as lastName, c.address.address as address, c.address.city.city as city from Customer c ")
-    List<CustomerAddress> getCustomerAdresses();
+    List<CustomerAddress> getCustomerAddresses();
 
 }
